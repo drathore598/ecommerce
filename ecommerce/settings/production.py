@@ -161,6 +161,8 @@ STATIC_ROOT = BASE_DIR/"venv/static_cdn/static_root"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR/"venv/static_cdn/media_root"
 
+from ecommerce.aws.conf import *
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
