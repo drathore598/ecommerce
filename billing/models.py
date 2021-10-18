@@ -11,8 +11,8 @@ User = settings.AUTH_USER_MODEL
 
 # abc@gmail.com -->> 1000000 billing profiles
 # user abc@gmail.com -->> 1 billing profile
-
-stripe.api_key = "sk_test_51JdbGrSD1YqNFpLpCWwGRTCC9FjqUVnBLFT1AShFO5X9h3BpgW28ynuBbZordqWxt7jl1ghpOUwDuSfsTno2VKBV00007Pm5V3 "
+STRIPE_SECRET_KEY = getattr(settings, "STRIPE_SECRET_KEY", "sk_test_51JdbGrSD1YqNFpLpCWwGRTCC9FjqUVnBLFT1AShFO5X9h3BpgW28ynuBbZordqWxt7jl1ghpOUwDuSfsTno2VKBV00007Pm5V3")
+stripe.api_key = STRIPE_SECRET_KEY
 
 
 class BillingProfileManager(models.Manager):

@@ -1,9 +1,11 @@
 import datetime
+import os
 
 AWS_GROUPNAME = "dheeraj_ecommerce_group"
 AWS_USERNAME = "dheeraj-ecommerce-user"
-AWS_ACCESS_KEY_ID = "AKIAWF5SSYBU4WDDT6X6"
-AWS_SECRET_ACCESS_KEY = "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"
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID", "AKIAWF5SSYBU4WDDT6X6")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY", "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")
+
 AWS_FILE_EXPIRE = 200
 AWS_PRELOAD_METADATA = True
 AWS_QUERYSTRING_AUTH = True
