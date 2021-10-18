@@ -21,7 +21,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'drathore598@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'django ecommerce <drathore598@gmail.com>'
+
+MANAGERS = (
+    ('Dheeraj Rathore', 'drathore598@gmail.com')
+)
+
+ADMIN = MANAGERS
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
