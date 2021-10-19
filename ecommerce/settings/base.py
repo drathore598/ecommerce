@@ -29,13 +29,13 @@ ALLOWED_HOSTS = []
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'drathore598@gmail.com'
-EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_HOST_PASSWORD = 'goku@123'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'django ecommerce <drathore598@gmail.com>'
 
 MANAGERS = (
-    ('Dheeraj Rathore', 'drathore598@gmail.com')
+    ('Dheeraj Rathore', 'drathore598@gmail.com'),
 )
 
 ADMIN = MANAGERS
