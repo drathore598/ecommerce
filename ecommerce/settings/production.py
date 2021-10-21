@@ -22,12 +22,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'drathore598@gmail.com'
-#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
-EMAIL_HOST_PASSWORD = "goku@123"
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = 'django ecommerce <drathore598@gmail.com>'
 
 MANAGERS = (

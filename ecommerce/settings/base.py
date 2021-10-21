@@ -27,12 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'drathore598@gmail.com'
-EMAIL_HOST_PASSWORD = 'goku@123'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'django ecommerce <drathore598@gmail.com>'
+#DEFAULT_FROM_EMAIL = 'django ecommerce <drathore598@gmail.com>'
 
 MANAGERS = (
     ('Dheeraj Rathore', 'drathore598@gmail.com'),
